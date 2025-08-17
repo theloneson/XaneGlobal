@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,10 +43,12 @@ const Navigation = () => {
             <Button variant="default" className="bg-brand-blue hover:bg-brand-blue-light">
               Check Next Cohort
             </Button>
+            <ThemeToggle />
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Mobile menu button & theme toggle */}
+          <div className="md:hidden flex items-center space-x-2">
+            <ThemeToggle />
             <Button variant="ghost" size="sm" onClick={toggleMenu}>
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
