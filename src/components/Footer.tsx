@@ -11,15 +11,11 @@ const Footer = () => {
             Join XaneGlobal to trade smarter, build better, and be part of the future of crypto investing.
           </p>
           
-          {/* Social Icons */}
-          <div className="bg-white/10 rounded-2xl p-8 max-w-4xl mx-auto">
-            <div 
-              className="bg-cover bg-center rounded-lg p-8 mb-8 relative"
-              style={{ backgroundImage: `url('/lovable-uploads/c56ffcf9-b485-4403-9bab-5858b65f710c.png')` }}
-            >
-              
-            </div>
-            
+          {/* Social Bar with full background */}
+          <div 
+            className="bg-cover bg-center rounded-2xl p-8 max-w-4xl mx-auto"
+            style={{ backgroundImage: `url('/lovable-uploads/bgimg.png')` }}
+          >
             <div className="flex justify-center space-x-6">
               <a href="#" className="w-16 h-16 rounded-full overflow-hidden hover:scale-110 transition-transform">
                 <img 
