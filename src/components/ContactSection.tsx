@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { Twitter, Send, Instagram, Music } from "lucide-react"; // icons (X, Telegram, TikTok, Instagram)
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -36,55 +37,44 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-section-bg">
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Contact Us
-          </h2>
-          <p className="text-xl text-text-secondary max-w-2xl mx-auto">
-            Ready to start your journey? Get in touch with our team
-          </p>
-        </div>
-
-        <div className="max-w-2xl mx-auto">
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <label htmlFor="fullName" className="block text-foreground font-medium mb-2">
-                  Full Name
-                </label>
-                <Input
-                  id="fullName"
-                  name="fullName"
-                  type="text"
-                  required
-                  value={formData.fullName}
-                  onChange={handleInputChange}
-                  className="bg-background border-brand-blue/20 focus:border-brand-blue"
-                  placeholder="Your full name"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-foreground font-medium mb-2">
-                  Email
-                </label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  required
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  className="bg-background border-brand-blue/20 focus:border-brand-blue"
-                  placeholder="your.email@example.com"
-                />
-              </div>
-            </div>
-            
+    <section id="contact" className="py-20 relative bg-background">
+      <div className="container mx-auto px-4 lg:px-8 text-center">
+        {/* Contact Form */}
+        <div className="max-w-2xl mx-auto bg-black/30 border border-brand-blue/40 rounded-xl p-8 shadow-lg backdrop-blur-sm">
+          <form onSubmit={handleSubmit} className="space-y-6 text-left">
             <div>
-              <label htmlFor="subject" className="block text-foreground font-medium mb-2">
-                Subject
+              <label htmlFor="fullName" className="block text-sm font-semibold mb-2">
+                FULLNAME
+              </label>
+              <Input
+                id="fullName"
+                name="fullName"
+                type="text"
+                required
+                value={formData.fullName}
+                onChange={handleInputChange}
+                className="bg-brand-blue/10 border-brand-blue/30 placeholder:text-gray-400"
+                placeholder="Enter your fullname"
+              />
+            </div>
+            <div>
+              <label htmlFor="email" className="block text-sm font-semibold mb-2">
+                EMAIL
+              </label>
+              <Input
+                id="email"
+                name="email"
+                type="email"
+                required
+                value={formData.email}
+                onChange={handleInputChange}
+                className="bg-brand-blue/10 border-brand-blue/30 placeholder:text-gray-400"
+                placeholder="Enter your email address"
+              />
+            </div>
+            <div>
+              <label htmlFor="subject" className="block text-sm font-semibold mb-2">
+                SUBJECT
               </label>
               <Input
                 id="subject"
@@ -93,14 +83,13 @@ const ContactSection = () => {
                 required
                 value={formData.subject}
                 onChange={handleInputChange}
-                className="bg-background border-brand-blue/20 focus:border-brand-blue"
-                placeholder="What's this about?"
+                className="bg-brand-blue/10 border-brand-blue/30 placeholder:text-gray-400"
+                placeholder="Message Subject"
               />
             </div>
-            
             <div>
-              <label htmlFor="message" className="block text-foreground font-medium mb-2">
-                Message
+              <label htmlFor="message" className="block text-sm font-semibold mb-2">
+                MESSAGE
               </label>
               <Textarea
                 id="message"
@@ -108,11 +97,11 @@ const ContactSection = () => {
                 required
                 value={formData.message}
                 onChange={handleInputChange}
-                className="bg-background border-brand-blue/20 focus:border-brand-blue min-h-[120px]"
-                placeholder="Tell us more about your inquiry..."
+                className="bg-brand-blue/10 border-brand-blue/30 placeholder:text-gray-400 min-h-[120px]"
+                placeholder="Your message"
               />
             </div>
-            
+
             <div className="text-center">
               <Button
                 type="submit"
@@ -124,6 +113,7 @@ const ContactSection = () => {
             </div>
           </form>
         </div>
+
       </div>
     </section>
   );
