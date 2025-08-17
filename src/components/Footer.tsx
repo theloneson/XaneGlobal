@@ -16,6 +16,7 @@ const Footer = () => {
             className="bg-cover bg-center rounded-2xl p-8 max-w-4xl mx-auto"
             style={{ backgroundImage: `url('/lovable-uploads/bgimg.png')` }}
           >
+            
             <div className="flex justify-center space-x-6">
               <a href="#" className="w-16 h-16 rounded-full overflow-hidden hover:scale-110 transition-transform">
                 <img 

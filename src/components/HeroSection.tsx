@@ -4,10 +4,7 @@ const HeroSection = () => {
   return (
     <section id="home" className="min-h-screen flex items-center relative overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-        style={{ backgroundImage: `url('/lovable-uploads/9bc627dd-ecc0-4079-aef5-f794cc76d834.png')` }}
-      />
+      <div className="hero-bg" />
       
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-hero-gradient" />

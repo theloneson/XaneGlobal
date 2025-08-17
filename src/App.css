@@ -4,7 +4,11 @@
   padding: 2rem;
   text-align: center;
 }
-
+/* App.css */
+.hero-bg {
+  @apply absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20;
+  background-image: url('/Images/bg.png');
+}
 .logo {
   height: 6em;
   padding: 1.5em;
