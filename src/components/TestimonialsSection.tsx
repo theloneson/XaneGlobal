@@ -30,7 +30,7 @@ const TestimonialsSection = () => {
 
   return (
     <section className="py-20 bg-background relative overflow-hidden">
-      {/* Background pattern matching the design */}
+      {/* Background decorations (subtle shapes) */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute left-20 top-20 w-32 h-32 rounded-full border border-white/20"></div>
         <div className="absolute right-20 bottom-20 w-24 h-24 rounded-full border border-white/20"></div>
@@ -38,6 +38,7 @@ const TestimonialsSection = () => {
       </div>
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
+        {/* Section Heading */}
         <div className="text-center mb-16">
           <span className="text-6xl font-bold text-text-secondary/20">04</span>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
@@ -47,13 +48,26 @@ const TestimonialsSection = () => {
 
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Left Side - Description */}
-            <div>
-              <p className="text-text-secondary leading-relaxed text-lg">
-                At XaneGlobal, our success is measured by the growth, trust, and results our members experience.
-                <br /><br />
-                Here's what traders, analysts, and partners have to say about working with us.
-              </p>
+            {/* Left Side - Description with Background Image */}
+            <div className="relative flex items-center min-h-[300px] lg:min-h-[400px]">
+              {/* Background image */}
+              <img
+                src="/lovable-uploads/Testimonies.png"
+                alt="Background Image"
+                className="absolute inset-0 w-full h-full object-cover opacity-30"
+              />
+
+              {/* Overlay text */}
+              <div className="relative z-10 max-w-xl text-left text-text-secondary leading-relaxed text-lg px-6">
+                <p>
+                  At XaneGlobal, our success is measured by the growth, trust, 
+                  and results our members experience.
+                </p>
+                <br />
+                <p>
+                  Here's what traders, analysts, and partners have to say about working with us.
+                </p>
+              </div>
             </div>
 
             {/* Right Side - Testimonial Card */}
@@ -70,7 +84,7 @@ const TestimonialsSection = () => {
             </div>
           </div>
 
-          {/* Navigation */}
+          {/* Navigation Arrows */}
           <div className="flex justify-center space-x-4 mt-12">
             <Button
               variant="outline"
@@ -94,11 +108,16 @@ const TestimonialsSection = () => {
         {/* Partners Section */}
         <div className="mt-20 text-center">
           <h3 className="text-3xl font-bold text-foreground mb-12">Our Partners</h3>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center space-x-12">
             <img 
-              src="/lovable-uploads/185b4814-c550-4b82-ba64-f532f7309988.png" 
+              src="/Images/fliotrades.png" 
               alt="Partner Logo"
-              className="h-16 w-auto opacity-80 hover:opacity-100 transition-opacity"
+              className="h-40 w-auto opacity-80 hover:opacity-100 transition-opacity"
+            />
+            <img 
+              src="/Images/inextai-logo.png" 
+              alt="Partner Logo"
+              className="h-40 w-auto opacity-80 hover:opacity-100 transition-opacity"
             />
           </div>
         </div>
