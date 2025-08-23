@@ -4,32 +4,6 @@ const HeroSection = () => {
   return (
     <section id="home" className="min-h-screen flex items-center relative overflow-hidden">
       {/* Background Image */}
-<<<<<<< HEAD
-      <div 
-        className="absolute inset-0 z-0 opacity-20"
-        style={{ 
-          backgroundImage: `url('https://organic-emerald-efvjnvfau4.edgeone.app/bgimg.png')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          filter: 'blur(2px) grayscale(30%)'
-        }}
-      />
-      
-      {/* Gradient Overlay - only for dark mode */}
-      <div className="absolute inset-0 z-10 dark:bg-black/40" />
-      
-      {/* 3D Abstract Element */}
-      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-1/3 h-full opacity-90 z-20 drop-shadow-2xl">
-        <img 
-          src="/lovable-uploads/Testimonies.png" 
-          alt="3D Abstract"
-          className="w-full h-full object-contain filter brightness-110 contrast-110"
-        />
-      </div>
-
-      <div className="container mx-auto px-4 lg:px-8 relative z-30">
-=======
       <div className="hero-bg" />
       
       {/* Gradient Overlay */}
@@ -45,7 +19,6 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
->>>>>>> 473ff7ae944a386813a36ca30f73f6fd9966b5aa
         <div className="max-w-4xl">
           {/* Brand Line */}
           <div className="mb-8">
@@ -70,17 +43,10 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
-<<<<<<< HEAD
-            <Button variant="premium" size="lg" className="px-8 py-4 text-lg">
-              Get Started
-            </Button>
-            <Button variant="outline" size="lg" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white px-8 py-4 text-lg">
-=======
             <Button size="lg" className="bg-brand-blue hover:bg-brand-blue-light px-8 py-4 text-lg">
               Get Started
             </Button>
             <Button variant="outline" size="lg" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-foreground px-8 py-4 text-lg">
->>>>>>> 473ff7ae944a386813a36ca30f73f6fd9966b5aa
               About Us
             </Button>
           </div>
