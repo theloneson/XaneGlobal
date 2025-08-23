@@ -4,7 +4,7 @@ import { Triangle, Square, Circle } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 bg-section-bg">
+    <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-3 gap-8 mb-16">
           {/* Our Story */}
