@@ -1,89 +1,59 @@
 const Footer = () => {
   return (
-    <footer className="bg-footer-bg py-16">
+    <footer className="py-20 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-6 gap-8 mb-12">
-          {/* Logo */}
-          <div className="md:col-span-1">
-            <div className="flex items-center space-x-3">
-              <img 
-                src="/lovable-uploads/6b3efde7-da06-4423-a452-e6e26ae343e4.png" 
-                alt="XaneGlobal Logo"
-                className="w-8 h-8"
-              />
-              <span className="text-xl font-bold text-foreground">XaneGlobal</span>
-            </div>
-          </div>
-
-          {/* EXPLORE */}
-          <div className="md:col-span-1">
-            <h3 className="text-foreground font-semibold mb-4 uppercase tracking-wider text-sm">EXPLORE</h3>
-            <ul className="space-y-3">
-              <li><a href="#" className="text-text-secondary hover:text-foreground transition-colors">XaneLabs</a></li>
-              <li><a href="#" className="text-text-secondary hover:text-foreground transition-colors">XaneVersity</a></li>
-              <li><a href="#" className="text-text-secondary hover:text-foreground transition-colors">Builder Hubs</a></li>
-            </ul>
-          </div>
-
-          {/* CONTACT */}
-          <div className="md:col-span-1">
-            <h3 className="text-foreground font-semibold mb-4 uppercase tracking-wider text-sm">CONTACT</h3>
-            <ul className="space-y-3">
-              <li><a href="mailto:info@xaneglobal.com" className="text-text-secondary hover:text-foreground transition-colors">info@xaneglobal.com</a></li>
-            </ul>
-          </div>
-
-          {/* HELP */}
-          <div className="md:col-span-1">
-            <h3 className="text-foreground font-semibold mb-4 uppercase tracking-wider text-sm">HELP</h3>
-            <ul className="space-y-3">
-              <li><a href="#" className="text-text-secondary hover:text-foreground transition-colors">Help page</a></li>
-              <li><a href="#" className="text-text-secondary hover:text-foreground transition-colors">Customer support</a></li>
-            </ul>
-          </div>
-
-          {/* LEGAL */}
-          <div className="md:col-span-1">
-            <h3 className="text-foreground font-semibold mb-4 uppercase tracking-wider text-sm">LEGAL</h3>
-            <ul className="space-y-3">
-              <li><a href="#" className="text-text-secondary hover:text-foreground transition-colors">Privacy policy</a></li>
-              <li><a href="#" className="text-text-secondary hover:text-foreground transition-colors">Terms of service</a></li>
-            </ul>
-          </div>
-
-          {/* CONNECT */}
-          <div className="md:col-span-1">
-            <h3 className="text-foreground font-semibold mb-4 uppercase tracking-wider text-sm">CONNECT</h3>
-            <div className="flex space-x-3">
-              <a href="#" className="w-6 h-6 hover:scale-110 transition-transform">
-                <img 
-                  src="/lovable-uploads/67ec036b-3134-4290-bb00-113821233ebc.png" 
-                  alt="Instagram"
-                  className="w-full h-full object-cover rounded"
-                />
-              </a>
-              <a href="#" className="w-6 h-6 hover:scale-110 transition-transform">
+        {/* Join Communities Section */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            Join Our Communities
+          </h2>
+          <p className="text-xl text-text-secondary mb-12 max-w-2xl mx-auto">
+            Join XaneGlobal to trade smarter, build better, and be part of the future of crypto investing.
+          </p>
+          
+          {/* Social Bar with full background */}
+          <div 
+            className="bg-cover bg-center rounded-2xl p-8 max-w-4xl mx-auto"
+            style={{ backgroundImage: `url('/lovable-uploads/bgimg.png')` }}
+          >
+            
+            <div className="flex justify-center space-x-6">
+              <a href="#" className="w-16 h-16 rounded-full overflow-hidden hover:scale-110 transition-transform">
                 <img 
                   src="/lovable-uploads/95ce1587-eb85-46fb-8c89-b5684cfc8e08.png" 
                   alt="X (Twitter)"
-                  className="w-full h-full object-cover rounded"
+                  className="w-full h-full object-cover"
                 />
               </a>
-              <a href="#" className="w-6 h-6 hover:scale-110 transition-transform">
+              <a href="#" className="w-16 h-16 rounded-full overflow-hidden hover:scale-110 transition-transform">
                 <img 
                   src="/lovable-uploads/09a84a18-183c-4c91-a050-25161bdef08d.png" 
                   alt="Telegram"
-                  className="w-full h-full object-cover rounded"
+                  className="w-full h-full object-cover"
+                />
+              </a>
+              <a href="#" className="w-16 h-16 rounded-full overflow-hidden hover:scale-110 transition-transform">
+                <img 
+                  src="/lovable-uploads/0404749a-5762-4f10-b87f-6bfc1ad13e3c.png" 
+                  alt="TikTok"
+                  className="w-full h-full object-cover"
+                />
+              </a>
+              <a href="#" className="w-16 h-16 rounded-full overflow-hidden hover:scale-110 transition-transform">
+                <img 
+                  src="/lovable-uploads/67ec036b-3134-4290-bb00-113821233ebc.png" 
+                  alt="Instagram"
+                  className="w-full h-full object-cover"
                 />
               </a>
             </div>
           </div>
         </div>
 
-        {/* Bottom Copyright */}
-        <div className="border-t border-text-secondary/20 pt-8">
-          <p className="text-text-secondary text-sm">
-            © 2025 XaneGlobal. All rights reserved.
+        {/* Footer Bottom */}
+        <div className="text-center pt-8 border-t border-brand-blue/20">
+          <p className="text-text-secondary">
+            All Copyright (C) 2025 Reserved
           </p>
         </div>
       </div>
