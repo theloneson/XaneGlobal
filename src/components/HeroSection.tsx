@@ -4,21 +4,30 @@ const HeroSection = () => {
   return (
     <section id="home" className="min-h-screen flex items-center relative overflow-hidden">
       {/* Background Image */}
-      <div className="hero-bg" />
+      <div className="absolute inset-0 z-0 opacity-20">
+        <img 
+          src="/Images/bg.png" 
+          alt="Background"
+          className="w-full h-full object-cover object-center"
+          style={{ filter: 'blur(1px) grayscale(80%)' }}
+          onLoad={() => console.log('Background image loaded')}
+          onError={() => console.log('Background image failed to load')}
+        />
+      </div>
       
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-hero-gradient" />
+      {/* Gradient Overlay - only for dark mode */}
+      <div className="absolute inset-0 z-10 dark:bg-black/40" />
       
       {/* 3D Abstract Element */}
-      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-1/3 h-full opacity-30">
+      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-1/3 h-full opacity-90 z-20 drop-shadow-2xl">
         <img 
-          src="/lovable-uploads/185b4814-c550-4b82-ba64-f532f7309988.png" 
+          src="/lovable-uploads/Testimonies.png" 
           alt="3D Abstract"
-          className="w-full h-full object-contain"
+          className="w-full h-full object-contain filter brightness-110 contrast-110"
         />
       </div>
 
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 lg:px-8 relative z-30">
         <div className="max-w-4xl">
           {/* Brand Line */}
           <div className="mb-8">
@@ -43,10 +52,10 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="bg-brand-blue hover:bg-brand-blue-light px-8 py-4 text-lg">
+            <Button variant="premium" size="lg" className="px-8 py-4 text-lg">
               Get Started
             </Button>
-            <Button variant="outline" size="lg" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-foreground px-8 py-4 text-lg">
+            <Button variant="outline" size="lg" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white px-8 py-4 text-lg">
               About Us
             </Button>
           </div>

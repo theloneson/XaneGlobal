@@ -5,6 +5,18 @@ import { Button } from "@/components/ui/button";
 const TestimonialsSection = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   
+  // Add CSS animation for infinite scroll
+  const scrollStyle = {
+    animation: 'scroll 20s linear infinite',
+  };
+
+  const keyframesStyle = `
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  `;
+  
   const testimonials = [
     {
       quote: "At XaneGlobal, our success is measured by the growth, trust, and results our members experience. Here's what traders, analysts, and partners have to say about working with us.",
@@ -20,6 +32,14 @@ const TestimonialsSection = () => {
     }
   ];
 
+  const partners = [
+    { name: "FlioTrades", logo: "/Images/fliotrades.png" },
+    { name: "InextAI", logo: "/Images/inextai-logo.png" },
+    { name: "Partner 3", logo: "/Images/partner3.png" },
+    { name: "Partner 4", logo: "/Images/partner4.png" },
+    { name: "Partner 5", logo: "/Images/partner5.png" }
+  ];
+
   const nextTestimonial = () => {
     setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
   };
@@ -30,6 +50,7 @@ const TestimonialsSection = () => {
 
   return (
     <section className="py-20 bg-background relative overflow-hidden">
+      <style>{keyframesStyle}</style>
       {/* Background decorations (subtle shapes) */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute left-20 top-20 w-32 h-32 rounded-full border border-white/20"></div>
@@ -105,20 +126,50 @@ const TestimonialsSection = () => {
           </div>
         </div>
 
-        {/* Partners Section */}
-        <div className="mt-20 text-center">
-          <h3 className="text-3xl font-bold text-foreground mb-12">Our Partners</h3>
-          <div className="flex justify-center items-center space-x-12">
-            <img 
-              src="/Images/fliotrades.png" 
-              alt="Partner Logo"
-              className="h-40 w-auto opacity-80 hover:opacity-100 transition-opacity"
-            />
-            <img 
-              src="/Images/inextai-logo.png" 
-              alt="Partner Logo"
-              className="h-40 w-auto opacity-80 hover:opacity-100 transition-opacity"
-            />
+        {/* Partners Section - Clean Infinite Scroll */}
+        <div className="mt-20">
+          <h3 className="text-3xl font-bold text-foreground mb-12 text-center">Our Partners</h3>
+          
+          <div className="relative overflow-hidden max-w-5xl mx-auto">
+            {/* Infinite scrolling container */}
+            <div className="flex space-x-16" style={scrollStyle}>
+              {/* First set of partners */}
+              <img 
+                src="/Images/fliotrades.png" 
+                alt="FlioTrades"
+                className="h-16 w-auto opacity-60 hover:opacity-90 transition-opacity duration-300 flex-shrink-0"
+              />
+              <img 
+                src="/Images/inextai-logo.png" 
+                alt="InextAI"
+                className="h-16 w-auto opacity-60 hover:opacity-90 transition-opacity duration-300 flex-shrink-0"
+              />
+              {/* Duplicate for seamless loop */}
+              <img 
+                src="/Images/fliotrades.png" 
+                alt="FlioTrades"
+                className="h-16 w-auto opacity-60 hover:opacity-90 transition-opacity duration-300 flex-shrink-0"
+              />
+              <img 
+                src="/Images/inextai-logo.png" 
+                alt="InextAI"
+                className="h-16 w-auto opacity-60 hover:opacity-90 transition-opacity duration-300 flex-shrink-0"
+              />
+              <img 
+                src="/Images/fliotrades.png" 
+                alt="FlioTrades"
+                className="h-16 w-auto opacity-60 hover:opacity-90 transition-opacity duration-300 flex-shrink-0"
+              />
+              <img 
+                src="/Images/inextai-logo.png" 
+                alt="InextAI"
+                className="h-16 w-auto opacity-60 hover:opacity-90 transition-opacity duration-300 flex-shrink-0"
+              />
+            </div>
+            
+            {/* Gradient overlays for smooth fade */}
+            <div className="absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-background to-transparent pointer-events-none"></div>
+            <div className="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-background to-transparent pointer-events-none"></div>
           </div>
         </div>
       </div>
