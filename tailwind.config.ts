@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'spartan': ['League Spartan', 'sans-serif'],
+				'sans': ['League Spartan', 'system-ui', 'sans-serif'], // This makes Spartan the default sans font
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -52,16 +56,10 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				'brand-blue': 'hsl(var(--brand-blue))', /* #0035DD */
-				'brand-blue-light': 'hsl(var(--brand-blue-light))', /* #0D00FF */
+				'brand-blue': 'hsl(var(--brand-blue))',
+				'brand-blue-light': 'hsl(var(--brand-blue-light))',
 				'section-bg': 'hsl(var(--section-bg))',
-				'text-secondary': 'hsl(var(--text-secondary))',
-				// Direct color utilities for convenience
-				'xane-primary': '#0035DD',
-				'xane-secondary': '#0D00FF', 
-				'xane-dark-bg': '#080808',
-				'xane-dark-section': '#191919',
-				'xane-light': '#FFFAFA'
+				'text-secondary': 'hsl(var(--text-secondary))'
 			},
 			backgroundImage: {
 				'hero-gradient': 'var(--hero-gradient)',

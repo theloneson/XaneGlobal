@@ -22,7 +22,7 @@ const Team = () => {
           <img 
             src="/lovable-uploads/c56ffcf9-b485-4403-9bab-5858b65f710c.png" 
             alt="Background"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover opacity-30"
           />
         </div>
 
@@ -41,16 +41,17 @@ const Team = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
             {teamMembers.map((member, index) => (
               <div key={index} className="text-center">
-                {/* Profile Image */}
-                <div className="w-40 h-40 md:w-48 md:h-48 mx-auto mb-4 rounded-xl overflow-hidden bg-muted flex items-center justify-center">
+                
+                {/* Image with white card look */}
+                <div className="w-36 h-36 md:w-44 md:h-44 mx-auto mb-4 bg-white shadow-lg rounded-2xl p-2 flex items-center justify-center">
                   {member.image ? (
                     <img 
                       src={member.image} 
                       alt={member.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover rounded-xl"
                     />
                   ) : (
-                    <div className="w-full h-full bg-muted" />
+                    <div className="w-full h-full bg-muted rounded-xl" />
                   )}
                 </div>
 
