@@ -52,10 +52,16 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				'brand-blue': 'hsl(var(--brand-blue))',
-				'brand-blue-light': 'hsl(var(--brand-blue-light))',
+				'brand-blue': 'hsl(var(--brand-blue))', /* #0035DD */
+				'brand-blue-light': 'hsl(var(--brand-blue-light))', /* #0D00FF */
 				'section-bg': 'hsl(var(--section-bg))',
-				'text-secondary': 'hsl(var(--text-secondary))'
+				'text-secondary': 'hsl(var(--text-secondary))',
+				// Direct color utilities for convenience
+				'xane-primary': '#0035DD',
+				'xane-secondary': '#0D00FF', 
+				'xane-dark-bg': '#080808',
+				'xane-dark-section': '#191919',
+				'xane-light': '#FFFAFA'
 			},
 			backgroundImage: {
 				'hero-gradient': 'var(--hero-gradient)',

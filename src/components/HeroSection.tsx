@@ -1,36 +1,50 @@
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+
   return (
-    <section id="home" className="min-h-screen flex items-center relative overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0 opacity-20">
+    <section id="home" className="min-h-screen flex items-center relative overflow-hidden bg-background">
+      {/* Background Image - Multiple approaches for reliability */}
+      <div 
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+        style={{ 
+          backgroundImage: `url('/Images/bg.png')`,
+          filter: 'blur(1px) grayscale(20%)',
+          opacity: '0.6'
+        }}
+      />
+      
+      {/* Fallback background image */}
+      <div className="absolute inset-0 z-0 opacity-40">
         <img 
           src="/Images/bg.png" 
           alt="Background"
-          className="w-full h-full object-cover object-center"
-          style={{ filter: 'blur(1px) grayscale(80%)' }}
-          onLoad={() => console.log('Background image loaded')}
-          onError={() => console.log('Background image failed to load')}
+          className="w-full h-full object-cover object-center blur-sm grayscale-[20%]"
+          onLoad={() => console.log('✅ Background image loaded successfully!')}
+          onError={() => console.error('❌ Background image failed to load - check if /Images/bg.png exists')}
         />
       </div>
       
-      {/* Gradient Overlay - only for dark mode */}
-      <div className="absolute inset-0 z-10 dark:bg-black/40" />
+      {/* Light overlay for better text contrast */}
+      <div className="absolute inset-0 z-5 bg-black/5 dark:bg-black/30" />
       
-      {/* 3D Abstract Element */}
+      {/* 3D Abstract Element - Testimonies */}
       <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-1/3 h-full opacity-90 z-20 drop-shadow-2xl">
         <img 
           src="/lovable-uploads/Testimonies.png" 
           alt="3D Abstract"
-          className="w-full h-full object-contain filter brightness-110 contrast-110"
+          className="w-full h-full object-contain brightness-110 contrast-110"
+          onLoad={() => console.log('✅ Testimonies image loaded!')}
+          onError={() => console.error('❌ Testimonies image failed to load')}
         />
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 relative z-30">
         <div className="max-w-4xl">
-          {/* Brand Line */}
-          <div className="mb-8">
+          {/* Brand Line - Added top padding */}
+          <div className="mb-8 pt-16">
             <span className="text-brand-blue text-lg font-semibold tracking-wider uppercase">
               XANEGLOBAL
             </span>
@@ -55,9 +69,14 @@ const HeroSection = () => {
             <Button variant="premium" size="lg" className="px-8 py-4 text-lg">
               Get Started
             </Button>
-            <Button variant="outline" size="lg" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white px-8 py-4 text-lg">
-              About Us
-            </Button>
+            <Button 
+      variant="outline" 
+      size="lg" 
+      className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white px-8 py-4 text-lg"
+      onClick={() => navigate("/about-us")}
+    >
+      About Us
+    </Button>
           </div>
         </div>
       </div>
