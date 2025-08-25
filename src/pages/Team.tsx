@@ -22,7 +22,7 @@ const Team = () => {
           <img 
             src="/lovable-uploads/c56ffcf9-b485-4403-9bab-5858b65f710c.png" 
             alt="Background"
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover opacity-20"
           />
         </div>
 
