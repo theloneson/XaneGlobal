@@ -31,7 +31,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 z-5 bg-black/5 dark:bg-black/30" />
       
       {/* 3D Abstract Element - Testimonies */}
-      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-1/3 h-full opacity-90 z-20 drop-shadow-2xl">
+      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-1/3 h-full opacity-90 z-20 drop-shadow-2xl hidden lg:block">
         <img 
           src="/lovable-uploads/Testimonies.png" 
           alt="3D Abstract"
