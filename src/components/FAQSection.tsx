@@ -40,7 +40,7 @@ const FAQSection = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <span className="text-6xl font-bold text-text-secondary/20"></span>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-[120px] font-bold text-foreground mb-4">
             FAQs
           </h2>
         </div>
