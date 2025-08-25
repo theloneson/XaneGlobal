@@ -44,7 +44,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 lg:px-8 relative z-30">
         <div className="max-w-4xl">
           {/* Brand Line - Added top padding */}
-          <div className="mb-8 pt-16">
+          <div className="mb-8 pt-32">
             <span className="text-brand-blue text-lg font-semibold tracking-wider uppercase">
               XANEGLOBAL
             </span>
