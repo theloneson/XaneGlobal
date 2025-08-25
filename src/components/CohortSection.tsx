@@ -3,7 +3,7 @@ const CohortSection = () => {
     <section id="cohorts" className="py-20 bg-section-bg">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
-          <span className="text-6xl font-bold text-text-secondary/20">03</span>
+          <span className="text-6xl font-bold text-text-secondary/20"></span>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             Our Cohort
           </h2>
