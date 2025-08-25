@@ -8,7 +8,7 @@ const AboutUs = () => {
       
       {/* Hero Section */}
       <section className="relative py-20 bg-background overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 opacity-5">
           <img 
             src="/lovable-uploads/c56ffcf9-b485-4403-9bab-5858b65f710c.png" 
             alt="Background"
