@@ -47,7 +47,7 @@ const FeaturesSection = () => {
           <div className="order-1 lg:order-2">
             <div className="mb-12">
               <span className="text-6xl font-bold text-text-secondary/20"></span>
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+              <h2 className="text-4xl md:text-7xl font-bold text-foreground mb-6">
                 More Than Just
                 <br />
                 <span className="text-brand-blue">Trading</span>
