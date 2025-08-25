@@ -1,22 +1,27 @@
 const Footer = () => {
   return (
-    <footer className="relative bg-footer-bg border-t border-foreground/10 shadow-inner mt-20">
+    <footer className="relative bg-footer-bg border-t border-foreground/10 mt-20">
       <div className="container mx-auto px-4 lg:px-8 py-16">
-        {/* Top Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-6 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-12">
           
           {/* Logo + Short Description */}
-          <div className="md:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
-              <img 
-                src="/lovable-uploads/6b3efde7-da06-4423-a452-e6e26ae343e4.png" 
-                alt="XaneGlobal Logo"
-                className="w-10 h-10"
-              />
-              <span className="text-2xl font-bold text-foreground">XaneGlobal</span>
+          <div className="md:col-span-2 flex flex-col justify-between">
+            <div>
+              <div className="flex items-center space-x-3 mb-4">
+                <img 
+                  src="/lovable-uploads/6b3efde7-da06-4423-a452-e6e26ae343e4.png" 
+                  alt="XaneGlobal Logo"
+                  className="w-10 h-10"
+                />
+                <span className="text-2xl font-bold text-foreground">XaneGlobal</span>
+              </div>
+              <p className="text-text-secondary text-sm leading-relaxed max-w-xs">
+                Empowering traders and builders in the Web3 and crypto space 
+                with tools, education, and communities.
+              </p>
             </div>
-            <p className="text-text-secondary text-sm leading-relaxed max-w-xs">
-              Empowering traders and builders in the Web3 and crypto space with tools, education, and communities.
+            <p className="text-text-secondary text-xs mt-8 md:mt-12">
+              © 2025 XaneGlobal. All rights reserved.
             </p>
           </div>
 
@@ -75,13 +80,6 @@ const Footer = () => {
               </a>
             </div>
           </div>
-        </div>
-
-        {/* Bottom Copyright */}
-        <div className="border-t border-text-secondary/20 pt-6 text-center">
-          <p className="text-text-secondary text-sm">
-            © 2025 XaneGlobal. All rights reserved.
-          </p>
         </div>
       </div>
     </footer>
