@@ -61,7 +61,7 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         {/* Section Heading */}
         <div className="text-center mb-16">
-          <span className="text-6xl font-bold text-text-secondary/20">04</span>
+          <span className="text-6xl font-bold text-text-secondary/20"></span>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             Testimonies
           </h2>
