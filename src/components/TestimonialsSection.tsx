@@ -62,7 +62,7 @@ const TestimonialsSection = () => {
         {/* Section Heading */}
         <div className="text-center mb-16">
           <span className="text-6xl font-bold text-text-secondary/20"></span>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-8xl font-bold text-foreground mb-4">
             Testimonies
           </h2>
         </div>
