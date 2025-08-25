@@ -36,9 +36,9 @@ const FeaturesSection = () => {
           <div className="order-2 lg:order-1">
             <div className="relative">
               <img 
-                src="/lovable-uploads/54803049-ddb9-4c25-b14e-5ff160608f89.png"
+                src="/Images/Screenshot.png"
                 alt="Trading Tools"
-                className="w-full max-w-md mx-auto"
+                className="w-full max-w-lg mx-auto"
               />
             </div>
           </div>

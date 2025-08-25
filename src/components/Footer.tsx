@@ -39,7 +39,7 @@ const Footer = () => {
           <div>
             <h3 className="text-foreground font-semibold mb-4 uppercase tracking-wider text-sm">Help</h3>
             <ul className="space-y-3">
-              <li><a href="xaneglobal@gmail.com" className="text-text-secondary hover:text-foreground transition-colors">Customer support</a></li>
+              <li><a href="#" className="text-text-secondary hover:text-foreground transition-colors">Customer support</a></li>
             </ul>
           </div>
 
@@ -70,13 +70,20 @@ const Footer = () => {
                   className="w-full h-full object-cover rounded"
                 />
               </a>
-              <a href="#" className="w-6 h-6 hover:scale-110 transition-transform">
+              <a href="https://t.me/+gBmZy3wFlQ9jMmM8" className="w-6 h-6 hover:scale-110 transition-transform">
                 <img 
                   src="/lovable-uploads/09a84a18-183c-4c91-a050-25161bdef08d.png" 
                   alt="Telegram"
                   className="w-full h-full object-cover rounded"
                 />
               </a>
+              <a href="https://vm.tiktok.com/ZSHGRLkDursHE-GVFAE/" className="w-6 h-6 hover:scale-110 transition-transform">
+                <img 
+                  src="/Images/Tiktok1.png" 
+                  alt="Tiktok"
+                  className="w-full h-full object-cover rounded"
+                />
+                </a>
             </div>
           </div>
         </div>
