@@ -63,7 +63,7 @@ const Footer = () => {
                   className="w-full h-full object-cover rounded"
                 />
               </a>
-              <a href="#" className="w-6 h-6 hover:scale-110 transition-transform">
+              <a href="https://x.com/xaneglobal" className="w-6 h-6 hover:scale-110 transition-transform">
                 <img 
                   src="/lovable-uploads/95ce1587-eb85-46fb-8c89-b5684cfc8e08.png" 
                   alt="X (Twitter)"
