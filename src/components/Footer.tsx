@@ -39,8 +39,7 @@ const Footer = () => {
           <div>
             <h3 className="text-foreground font-semibold mb-4 uppercase tracking-wider text-sm">Help</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-text-secondary hover:text-foreground transition-colors">Help page</a></li>
-              <li><a href="#" className="text-text-secondary hover:text-foreground transition-colors">Customer support</a></li>
+              <li><a href="xaneglobal@gmail.com" className="text-text-secondary hover:text-foreground transition-colors">Customer support</a></li>
             </ul>
           </div>
 
@@ -57,7 +56,7 @@ const Footer = () => {
           <div>
             <h3 className="text-foreground font-semibold mb-4 uppercase tracking-wider text-sm">Connect</h3>
             <div className="flex space-x-4">
-              <a href="#" className="w-6 h-6 hover:scale-110 transition-transform">
+              <a href="https://www.instagram.com/xaneglobal/" className="w-6 h-6 hover:scale-110 transition-transform">
                 <img 
                   src="/lovable-uploads/67ec036b-3134-4290-bb00-113821233ebc.png" 
                   alt="Instagram"
