@@ -43,12 +43,12 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-4 lg:px-8 relative z-30">
         <div className="max-w-4xl">
-          {/* Brand Line - Added top padding */}
+          {/* Brand Line - Added top padding 
           <div className="mb-8 pt-16">
             <span className="text-brand-blue text-lg font-semibold tracking-wider uppercase">
               XANEGLOBAL
             </span>
-          </div>
+          </div>*/}
 
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-8 leading-tight">
