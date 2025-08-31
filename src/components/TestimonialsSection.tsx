@@ -19,16 +19,19 @@ const TestimonialsSection = () => {
   
   const testimonials = [
     {
-      quote: "At XaneGlobal, our success is measured by the growth, trust, and results our members experience. Here's what traders, analysts, and partners have to say about working with us.",
-      author: "Trader Community"
+    quote: "At XaneGlobal, our success is measured by the growth, trust, and results our members experience. Here's what traders, analysts, and partners have to say about working with us.",
+    author: "Trader Community",
+    profile: "/Images/profile1.png", 
     },
     {
-      quote: "The narrative approach completely changed how I view the crypto market. XaneGlobal taught me to think beyond charts and trade with conviction.",
-      author: "Sarah Chen"
+        quote: "The narrative approach completely changed how I view the crypto market. XaneGlobal taught me to think beyond charts and trade with conviction.",
+    author: "Sarah Chen",
+    profile: "/Images/profile2.png",
     },
     {
       quote: "The community and tools provided by XaneGlobal have elevated my trading to levels I never thought possible. The support is incredible.",
-      author: "Mike Rodriguez"
+      author: "Mike Rodriguez",
+      profile: "/Images/profile3.png",
     }
   ];
 
@@ -94,7 +97,12 @@ const TestimonialsSection = () => {
             {/* Right Side - Testimonial Card */}
             <div className="bg-brand-blue/10 border border-brand-blue/20 rounded-lg p-8 relative">
               <div className="mb-6">
-                <div className="w-16 h-16 bg-text-secondary/20 rounded-full mx-auto mb-6"></div>
+                <img
+                  src={testimonials[currentTestimonial].profile}
+                  alt={testimonials[currentTestimonial].author}
+                  className="w-16 h-16 rounded-full mx-auto mb-6 object-cover"
+                />
+
                 <p className="text-text-secondary leading-relaxed text-center text-lg">
                   {testimonials[currentTestimonial].quote}
                 </p>
