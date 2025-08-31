@@ -72,8 +72,23 @@ const AboutUs = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Left Side */}
-            <div className="bg-white/10 rounded-2xl p-8">
+            
+            {/* Right Side (Number + Heading) – first on mobile */}
+            <div className="relative order-1 lg:order-2">
+              <span className="block mb-4 text-6xl md:text-9xl font-bold text-text-secondary/20 md:absolute md:-top-8 md:right-0">
+                02
+              </span>
+              <div className="pt-10 sm:pt-20 text-left sm:text-right">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-blue">
+                  The Results We
+                  <br />
+                  Have Achieved
+                </h2>
+              </div>
+            </div>
+
+            {/* Left Side (List) – second on mobile */}
+            <div className="bg-white/10 rounded-2xl p-8 order-2 lg:order-1">
               <ul className="space-y-4 text-foreground">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-brand-blue rounded-full mt-2 mr-4 flex-shrink-0"></span>
@@ -92,20 +107,6 @@ const AboutUs = () => {
                   <span>Created a platform where market narratives turn into real trades.</span>
                 </li>
               </ul>
-            </div>
-
-            {/* Right Side */}
-            <div className="relative">
-              <span className="block mb-4 text-6xl md:text-9xl font-bold text-text-secondary/20 md:absolute md:-top-8 md:right-0">
-                02
-              </span>
-              <div className="pt-10 sm:pt-20 text-left sm:text-right">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-blue">
-                  The Results We
-                  <br />
-                  Have Achieved
-                </h2>
-              </div>
             </div>
           </div>
         </div>
@@ -144,8 +145,21 @@ const AboutUs = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Left Side */}
-            <div className="space-y-6">
+
+            {/* Right Side (Number + Heading) – first on mobile */}
+            <div className="relative order-1 lg:order-2">
+              <span className="block mb-4 text-6xl md:text-9xl font-bold text-text-secondary/20 md:absolute md:-top-8 md:right-0">
+                04
+              </span>
+              <div className="pt-10 sm:pt-20 text-left sm:text-right">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground">
+                  Why We Lead
+                </h2>
+              </div>
+            </div>
+
+            {/* Left Side (features) – second on mobile */}
+            <div className="space-y-6 order-2 lg:order-1">
               <div className="space-y-4">
                 <div>
                   <h3 className="text-lg sm:text-xl font-bold text-foreground mb-2">Experienced Team:</h3>
@@ -170,17 +184,6 @@ const AboutUs = () => {
               </div>
             </div>
 
-            {/* Right Side */}
-            <div className="relative">
-              <span className="block mb-4 text-6xl md:text-9xl font-bold text-text-secondary/20 md:absolute md:-top-8 md:right-0">
-                04
-              </span>
-              <div className="pt-10 sm:pt-20 text-left sm:text-right">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground">
-                  Why We Lead
-                </h2>
-              </div>
-            </div>
           </div>
         </div>
       </section>
