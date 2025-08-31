@@ -16,7 +16,7 @@ const CohortSection = () => {
           <div className="bg-brand-blue/10 border border-brand-blue/20 rounded-lg p-8 md:p-12">
             {/* Video Placeholder */}
             <div className="bg-background/50 rounded-lg p-8 mb-8 text-center">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Video Slide</h3>
+              {/*<h3 className="text-2xl font-bold text-foreground mb-4">Video Slide</h3>*/}
                   <div className="w-full h-64 bg-background/20 rounded-lg flex items-center justify-center overflow-hidden">
                       <video 
                         src="/Videos/XaneGlobal video.mp4" 
