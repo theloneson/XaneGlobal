@@ -25,8 +25,8 @@ const TestimonialsSection = () => {
     },
     {
         quote: "The narrative approach completely changed how I view the crypto market. XaneGlobal taught me to think beyond charts and trade with conviction.",
-    author: "Sarah Chen",
-    profile: "/Images/profile2.png",
+    author: "VD",
+    profile: "/Images/VD.jpg",
     },
     {
       quote: "The community and tools provided by XaneGlobal have elevated my trading to levels I never thought possible. The support is incredible.",
