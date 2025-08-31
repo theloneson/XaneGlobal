@@ -24,7 +24,7 @@ const TestimonialsSection = () => {
     profile: "/Images/SammyVerse.jpg", 
     },
     {
-        quote: "The narrative approach completely changed how I view the crypto market. XaneGlobal taught me to think beyond charts and trade with conviction.",
+        quote: "24/7 completely reshaped how I see trading, from understanding the fundamentals to the deeper narrative of degening and the entire ecosystem. The tutors weren’t just teachers; they were guides, friendly, unbiased, and making sure no one was left behind.",
     author: "VD",
     profile: "/Images/VD.jpg",
     },
