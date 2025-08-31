@@ -18,7 +18,7 @@ const AboutUs = () => {
         
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold text-brand-blue mb-8 tracking-wider">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold text-brand-white mb-8 tracking-wider">
               ABOUT US
             </h1>
             <p className="text-base sm:text-xl text-text-secondary max-w-4xl mx-auto leading-relaxed">
