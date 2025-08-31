@@ -30,8 +30,8 @@ const TestimonialsSection = () => {
     },
     {
       quote: "24/7 is a knowledge-filled experience, backed by a variety of developed systems that teach you how to properly degen while still managing risks effectively.",
-      author: "Mike Rodriguez",
-      profile: "/Images/profile3.png",
+      author: "SeyTeddy",
+      profile: "/Images/Sey Teddy.jpg",
     }
   ];
 
