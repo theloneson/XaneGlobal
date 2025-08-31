@@ -28,9 +28,9 @@ const Navigation = () => {
             <Link to="/" className="text-foreground hover:text-brand-blue transition-colors">
               Home
             </Link>
-            <a href="#cohorts" className="text-foreground hover:text-brand-blue transition-colors">
+            {/*<a href="#cohorts" className="text-foreground hover:text-brand-blue transition-colors">
               Cohorts
-            </a>
+            </a>*/}
             <Link to="/team" className="text-foreground hover:text-brand-blue transition-colors">
               Team
             </Link>
