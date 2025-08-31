@@ -19,9 +19,9 @@ const TestimonialsSection = () => {
   
   const testimonials = [
     {
-    quote: "At XaneGlobal, our success is measured by the growth, trust, and results our members experience. Here's what traders, analysts, and partners have to say about working with us.",
-    author: "Trader Community",
-    profile: "/Images/profile1.png", 
+    quote: "24/7 might not be as hyped as the classes on CTNG, but I believe there’s more to it and it can even be better than those hyped ones. Looking at the results so far, I don’t think any degen class has produced the kind of massive results these students have shown",
+    author: "SammyVerse",
+    profile: "/Images/SammyVerse.jpg", 
     },
     {
         quote: "The narrative approach completely changed how I view the crypto market. XaneGlobal taught me to think beyond charts and trade with conviction.",
