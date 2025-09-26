@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ContactSection from "@/components/ContactSection";
 
-const ContactUs = () => {
+const ContactUs: React.FC = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navigation />
@@ -35,10 +35,8 @@ const ContactUs = () => {
         </div>
       </section>
 
+      {/* Contact Form Section */}
       <ContactSection />
-
-      {/* Join Communities Section */}
-      
 
       <Footer />
     </div>
